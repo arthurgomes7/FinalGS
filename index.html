@@ -4,60 +4,190 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
   <title>FloodDrone</title>
+  
 </head>
-<body class="min-h-screen bg-gradient-to-br from-cyan-300 to-blue-200">   
-  <header class="bg-cyan p-5 shadow-md">
-    <div class="flex justify-between items-center max-w-6xl mx-auto">
-      <h1 class="text-2xl font-bold">FloodDrone</h1>
-      <button id="menu-btn" class="md:hidden text-2xl">
-        ☰
-      </button>
-      <nav class="hidden md:block">
-        <ul class="flex gap-6 text-white font-medium">
+<body class="min-h-screen bg-gradient-to-b from-blue-100 via-sky-100 to-gray-200">   
+  <header class="">
+    <nav class="p-3 font-semibold text-gray-500">
+        <ul class="flex gap-6 justify-center md:gap-20">
           <li><a href="#">Problemas</a></li>
           <li><a href="#">Dados</a></li>
           <li><a href="#">Sobre</a></li>
           <li><a href="#">Tecnologias</a></li>
         </ul>
       </nav>
-    </div>
-    <div id="mobile-menu" class="md:hidden hidden mt-4 px-4">
-      <ul class="space-y-2 text-white font-medium">
-        <li><a href="#" class="hover:text-black">Problemas</a></li>
-        <li><a href="#" class="hover:text-black">Dados</a></li>
-        <li><a href="#" class="hover:text-black">Sobre</a></li>
-        <li><a href="#" class="hover:text-black">Tecnologias</a></li>
-      </ul>
-    </div>
   </header>
   <main>
     <section>
-        <div class="main flex p-10 justify-center gap-10 flex-col">
-            <div class="text-main flex flex-col text-center gap-10">
-                <h1 class="font-bold text-6xl text-white">FloodDrone</h1>
-                <p class="text-start">A tecnologia é capaz de inúmeras coisas, inclusive salvar vidas.
-                Esse é o nosso pensamento com a criação do <strong>FloodDrone</strong>, uma inovação que observa o céu para proteger quem está no chão.
-                Antecipar riscos, emitir alertas e ajudar comunidades — esse é o futuro que estamos construindo.</p>
-                <div class="buttons-main justify-center flex gap-5">
-                    <button>
-                        <a href="" class="p-3 rounded-full text-white font-bold border hover:bg-sky-400">Saiba mais</a>
-                    </button>
-                    <button>
-                        <a href="" class="border p-3 rounded-full text-white font-bold hover:bg-sky-400">Preços</a>
-                    </button>
-                </div>
+        <div class="main flex p-10 gap-10 flex-col text-gray-800 md:flex-row">
+            <div class="text-main flex flex-col">
+                <h1 class="font-bold text-7xl pe-6">Flood</h1>
+                <h1 class="font-bold text-7xl ps-12">Drone</h1>
+                <p class="font-semibold text-gray-700 py-5 italic">Monitoramento inteligente das chuvas para proteger vidas antes que a água chegue.</p>
             </div>
-            <div class="photo-main">
-                <img src="assets/images/drone.webp" alt="">
+            <div> 
+              <img src="assets/images/drone.png" alt="" class="rounded-xl">
             </div>
         </div>
-         
     </section>
   </main>
-
-
-
-<script src="main.js"></script>
+  <div class="flex flex-col">
+    <section>
+      <div class="bg-gray-400 mx-5 rounded-xl flex justify-between p-4 font-bold text-gray-800 text-2xl gap-5">
+        <div>
+          <h2>21 Mil</h2>
+          <p class="font-normal text-sm italic">Inundações</p>
+        </div>
+        <div>
+          <h2>110Mi<strong class="text-xs"></strong></h2>
+          <p class="font-normal text-sm italic">Afetados</p>
+        </div>
+        <div>
+          <h2>8 Bi</h2>
+          <p class="font-normal text-sm italic">Prejuízo</p>
+        </div>
+      </div>
+    </section>
+    <p class="mx-5 p-1 italic text-sm text-gray-500">Dados retirados do Arquivo da GS</p>
+  </div>
+  <div class="flex flex-col gap-5 text-gray-800 py-8">
+    <div class="main-info">
+      <h1 class="font-bold text-5xl ps-6">Problemas</h1>
+      <h1 class="font-bold text-5xl pe-6 text-end">Identificados</h1>
+    </div>
+    <div class="p-5 font-semibold text-lg">
+      <p>As enchentes no Brasil não são eventos novos 4 são tragédias anunciadas. De acordo com o Atlas Brasileiro de Desastres Naturais (CEMADEN/UFSC), entre 1991 e 2022, o país registrou mais de 21 mil inundações, afetando mais de 110 milhões de pessoas.</p>
+      <p>As regiões mais vulneráveis são justamente aquelas com maior déficit de infraestrutura urbana. A Região Metropolitana de São Paulo, o Vale do Itajaí em Santa Catarina, a Baixada Fluminense no Rio de Janeiro e diversas áreas no Nordeste enfrentam inundações recorrentes que afetam desproporcionalmente populações de baixa renda. De acordo com o Instituto Brasileiro de Geografia e Estatística (IBGE), mais de 8 milhões de brasileiros vivem em áreas de risco, sendo que 55% dessas áreas carecem de sistemas básicos de drenagem urbana.</p>
+    </div>
+    <div class="cards-info flex flex-col gap-5">
+      <div class="bg-gray-400 mx-5 rounded-xl flex justify-between p-4 font-bold text-gray-800 text-2xl gap-3 flex flex-col">
+        <div class="flex flex-col">
+          <h1 class="text-white">21 Mil Inundações</h1>
+        </div>
+        <div>
+          <p class="text-gray-800 text-base">De acordo com o Atlas Brasileiro de Desastres Naturais (CEMADEN/UFSC), entre 1991 e 2022, o país registrou mais de 21 mil inundações</p>
+        </div>
+      </div>
+      <div class="bg-gray-400 mx-5 rounded-xl flex justify-between p-4 font-bold text-gray-800 text-2xl gap-5 flex flex-col">
+        <div class="flex flex-col">
+          <h1 class="text-white">110 Milhões de Afetados</h1>
+        </div>
+        <div>
+          <p class="text-gray-800 text-base">21 Mil inundações que ocorreram de 1991 a 2022, deixaram mais de 110 milhões de pessoas afetadas.</p>
+        </div>
+      </div>
+      <div class="bg-gray-400 mx-5 rounded-xl flex justify-between p-4 font-bold text-gray-800 text-2xl gap-5 flex flex-col">
+        <div class="flex flex-col">
+          <h1 class="text-white">R$ 8 Bilhões de Prejuízo</h1>
+        </div>
+        <div>
+          <p class="text-gray-800 text-base">O impacto econômico dessas tragédias é igualmente devastador. Estudos do Banco Mundial estimam que o Brasil perde anualmente cerca de R$ 8 bilhões devido a desastres naturais, sendo as enchentes responsáveis por mais de 60% desse valor.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="p-5">
+    <h1 class="text-3xl font-bold mb-4">Ideia Desenvolvida</h1>
+    <p class="mb-6 text-gray-700">
+      Visando todo o cenário já citado, o FloodDrone foi uma ideia pensada para a redução de sofrimento e destruições causadas por enchentes.
+    </p>
+  </div>
+  <div class="flex justify-center p-5 gap-5 flex-col items-center">
+    <div class="card perspective w-[250px] h-[250px] cursor-pointer" onclick="this.querySelector('.card-inner').classList.toggle('flipped')">
+      <div class="card-inner relative w-full h-full transition-transform duration-700 preserve-3d">
+        <div class="card-front absolute w-full h-full p-5 bg-white shadow-lg flex flex-col justify-between items-between backface-hidden text-gray-800">
+          <div>
+            <h3 class="text-xl font-semibold">Sensor de Temperatura</h3>
+            <p></p>
+          </div>
+          <p class="mt-2 text-3xl text-blue-900">+</p>
+        </div>
+        <div class="card-back absolute w-full h-full bg-white p-5 shadow-lg flex justify-center items-center backface-hidden rotate-y-180 text-gray-800">
+          <p class="italic font-semibold">Dispositivo eletrônico utilizado para medir a temperatura do ambiente com precisão. Ideal para monitoramento climático e ambiental em tempo real.</p>
+        </div>
+      </div>
+    </div>
+    <div class="card perspective w-[250px] h-[250px] cursor-pointer" onclick="this.querySelector('.card-inner').classList.toggle('flipped')">
+      <div class="card-inner relative w-full h-full transition-transform duration-700 preserve-3d">
+        <div class="card-front absolute w-full h-full p-5 bg-white shadow-lg flex flex-col justify-between items-between backface-hidden text-gray-800">
+          <div>
+            <h3 class="text-xl font-semibold">Sensor de Umidade Relativa</h3>
+            <p></p>
+          </div>
+          <p class="mt-2 text-3xl text-blue-900">+</p>
+        </div>
+        <div class="card-back absolute w-full h-full bg-white p-5 shadow-lg flex justify-center items-center backface-hidden rotate-y-180 text-gray-800">
+          <p class="italic font-semibold">Equipamento que mede a quantidade de vapor de água presente no ar em relação ao máximo que o ar pode conter em determinada temperatura. Essencial para análise de conforto térmico e previsão meteorológica.</p>
+        </div>
+      </div>
+    </div>
+    <div class="card perspective w-[250px] h-[250px] cursor-pointer" onclick="this.querySelector('.card-inner').classList.toggle('flipped')">
+      <div class="card-inner relative w-full h-full transition-transform duration-700 preserve-3d">
+        <div class="card-front absolute w-full h-full p-5 bg-white shadow-lg flex flex-col justify-between items-between backface-hidden text-gray-800">
+          <div>
+            <h3 class="text-xl font-semibold">Barômetro Digital</h3>
+            <p></p>
+          </div>
+          <p class="mt-2 text-3xl text-blue-900">+</p>
+        </div>
+        <div class="card-back absolute w-full h-full bg-white p-5 shadow-lg flex justify-center items-center backface-hidden rotate-y-180 text-gray-800">
+          <p class="italic font-semibold">Sensor eletrônico que mede a pressão atmosférica. Útil para prever mudanças no tempo, como aproximação de tempestades ou frentes frias.</p>
+        </div>
+      </div>
+    </div>
+    <div class="card perspective w-[250px] h-[250px] cursor-pointer" onclick="this.querySelector('.card-inner').classList.toggle('flipped')">
+      <div class="card-inner relative w-full h-full transition-transform duration-700 preserve-3d">
+        <div class="card-front absolute w-full h-full p-5 bg-white shadow-lg flex flex-col justify-between items-between backface-hidden text-gray-800">
+          <div>
+            <h3 class="text-xl font-semibold">Camera HD</h3>
+            <p></p>
+          </div>
+          <p class="mt-2 text-3xl text-blue-900">+</p>
+        </div>
+        <div class="card-back absolute w-full h-full bg-white p-2 shadow-lg flex justify-center items-center backface-hidden rotate-y-180 text-gray-800">
+          <p class="italic font-semibold">Dispositivo de captura de imagens com alta definição (alta resolução), ideal para monitoramento visual de áreas externas ou internas, auxiliando em análises ambientais e de segurança.</p>
+        </div>
+      </div>
+    </div>
+    <div class="card perspective w-[250px] h-[250px] cursor-pointer" onclick="this.querySelector('.card-inner').classList.toggle('flipped')">
+      <div class="card-inner relative w-full h-full transition-transform duration-700 preserve-3d">
+        <div class="card-front absolute w-full h-full p-5 bg-white shadow-lg flex flex-col justify-between items-between backface-hidden text-gray-800">
+          <div>
+            <h3 class="text-xl font-semibold">Anemômetro</h3>
+            <p></p>
+          </div>
+          <p class="mt-2 text-3xl text-blue-900">+</p>
+        </div>
+        <div class="card-back absolute w-full h-full bg-white p-5 shadow-lg flex justify-center items-center backface-hidden rotate-y-180 text-gray-800">
+          <p class="italic font-semibold">Drones entregam alimentos, remédios e ajuda humanitária em áreas inacessíveis após desastres naturais.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="px-5 bg-gray-500 text-white">
+    <h2 class="text-center font-bold text-xl">FloodDrone</h2>
+    <p class="text-center italic">Todos direitos reservados</p>
+    <div class="flex justify-center gap-10 p-5">
+      <div class="links flex flex-col">
+        <h5 class="font-bold">Navegação</h5>
+        <ul class="px-2 p-2">
+          <li class="hover:text-black"><a href="#">Inicio</a></li>
+          <li class="hover:text-black""><a href="#">Dados</a></li>
+          <li class="hover:text-black""><a href="#">Sobre</a></li>
+        </ul>
+      </div>
+      <div class="redes flex flex-col gap-2">
+        <h5 class="font-bold">Redes Sociais</h5>
+        <div class="flex flex-col">
+          <i class="fi fi-brands-instagram"> Instagram</i>
+          <i class="fi fi-brands-facebook"> Facebook</i>
+          <i class="fi fi-brands-twitter"> Twitter</i>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="main.js"></script>
 </body>
 </html>
