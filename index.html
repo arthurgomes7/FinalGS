@@ -21,32 +21,36 @@
   </header>
   <main>
     <section>
-        <div class="main flex p-10 gap-10 flex-col text-gray-800 md:flex-row">
-            <div class="text-main flex flex-col">
-                <h1 class="font-bold text-7xl pe-6">Flood</h1>
-                <h1 class="font-bold text-7xl ps-12">Drone</h1>
-                <p class="font-semibold text-gray-700 py-5 italic">Monitoramento inteligente das chuvas para proteger vidas antes que a água chegue.</p>
+        <div class="main flex p-10 gap-10 flex-col text-gray-800 md:flex-row xl:justify-center">
+            <div class="text-main flex flex-col xl:items-between justify-center gap-10">
+                <div>
+                  <h1 class="font-bold text-7xl pe-6 xl:text-9xl">Flood</h1>
+                  <h1 class="font-bold text-7xl ps-12 xl:text-9xl">Drone</h1>
+                </div>
+                <div>
+                  <p class="font-semibold text-gray-700 py-5 italic xl:text-2xl">Monitoramento inteligente das chuvas para proteger vidas antes que a água chegue.</p>
+                </div>
             </div>
             <div>
-              <img src="assets/images/drone.png" alt="" class="rounded-xl">
+              <img src="assets/images/drone.png" alt="" class="max-h-[500px] w-auto rounded-xl">
             </div>
         </div>
     </section>
   </main>
   <div class="flex flex-col">
     <section id="problemas">
-      <div class="bg-gray-400 mx-5 rounded-xl flex justify-between p-4 font-bold text-gray-800 text-2xl gap-5">
+      <div class="mx-5 rounded-xl flex justify-center p-4 font-bold text-gray-800 text-2xl gap-12">
         <div>
-          <h2>21 Mil</h2>
-          <p class="font-normal text-sm italic">Inundações</p>
+          <h2 class="text-3xl md:text-5xl">21 Mil</h2>
+          <p class="font-normal text-sm italic text-center md:text-lg">Inundações</p>
         </div>
         <div>
-          <h2>110Mi<strong class="text-xs"></strong></h2>
-          <p class="font-normal text-sm italic">Afetados</p>
+          <h2 class="text-3xl md:text-5xl">110Mi<strong class="text-xs"></strong></h2>
+          <p class="font-normal text-sm italic text-center md:text-lg">Afetados</p>
         </div>
         <div>
-          <h2>8 Bi</h2>
-          <p class="font-normal text-sm italic">Prejuízo</p>
+          <h2 class="text-3xl md:text-5xl">8 Bi</h2>
+          <p class="font-normal text-sm italic text-center md:text-lg">Prejuízo</p>
         </div>
       </div>
     </section>
@@ -93,6 +97,69 @@
     <p class="mb-6 text-gray-700">
       Visando todo o cenário já citado, o FloodDrone foi uma ideia pensada para a redução de sofrimento e destruições causadas por enchentes.
     </p>
+    <p>O FloodDrone é um drone equipado com sensores avançados e sistemas de coleta de dados atmosféricos em tempo real. Seu objetivo principal é monitorar áreas críticas e fornecer dados meteorológicos locais com maior precisão e velocidade do que os métodos tradicionais (como satélites ou estações fixas).</p>
+    <div class="flex flex-col md:items-center p-10">
+      <div class="flex flex-col md:flex-row">
+        <div class="relative max-w-md p-5 m-5 bg-white rounded-xl shadow-md overflow-hidden">
+          <h3 class="font-semibold text-xl mb-3 text-gray-800">
+            1. Voo sobre áreas de risco
+          </h3>
+          <p class="text-gray-600 mb-4">
+            O drone sobrevoa regiões mapeadas como vulneráveis a enchentes e alagamentos, como margens de rios, encostas e áreas urbanas mal drenadas.
+          </p>
+          <a href="#" class="text-yellow-500 font-bold text-sm underline"></a>
+        </div>
+        <div class="relative max-w-md p-5 m-5 bg-white rounded-xl shadow-md overflow-hidden">
+          <h3 class="font-semibold text-xl mb-3 text-gray-800">
+            2. Coleta de dados atmosféricos
+          </h3>
+          <p class="text-gray-600 mb-4">
+            Durante o voo, ele mede:
+            <ul class="text-gray-600">
+              <li>1. Temperatura</li>
+              <li>2. Umidade relativa do ar</li>
+              <li>3. Pressão atmosférica</li>
+              <li>4. Velocidade e direção do vento</li>
+              <li>5. Níveis de precipitação iminente (chuva)</li>
+              <li>6. Concentração de nuvens e formação de tempestades (com sensores infravermelho ou câmeras multispectrais)</li>
+            </ul>
+          </p>
+          <a href="#" class="text-yellow-500 font-bold text-sm underline"></a>
+        </div>
+      </div>
+      <div class="flex flex-col md:flex-row">
+        <div class="relative max-w-md p-5 m-5 bg-white rounded-xl shadow-md overflow-hidden">
+          <h3 class="font-semibold text-xl mb-3 text-gray-800">
+            3. Transmissão em tempo real
+          </h3>
+          <p class="text-gray-600 mb-4">
+            Todos os dados são enviados via rede sem fio (4G/5G ou LoRa) para uma central de monitoramento meteorológico ou defesa civil.
+          </p>
+          <a href="#" class="text-yellow-500 font-bold text-sm underline"></a>
+        </div>
+        <div class="relative max-w-md p-5 m-5 bg-white rounded-xl shadow-md overflow-hidden">
+          <h3 class="font-semibold text-xl mb-3 text-gray-800">
+            4. Análise preditiva
+          </h3>
+          <p class="text-gray-600 mb-4">
+            <ul class="text-gray-600">
+              <li>Os dados são processados por modelos climáticos ajustados com machine learning, que comparam padrões anteriores de eventos extremos.</li>
+              <li>Isso permite prever chuvas intensas com maior precisão e antecedência.</li>
+            </ul>
+          </p>
+          <a href="#" class="text-yellow-500 font-bold text-sm underline"></a>
+        </div>
+      </div>
+      <div class="relative max-w-md p-5 m-5 bg-white rounded-xl shadow-md overflow-hidden">
+        <h3 class="font-semibold text-xl mb-3 text-gray-800">
+          5. Geração de alertas
+        </h3>
+        <p class="text-gray-600 mb-4">
+          Quando os dados indicam risco iminente, o sistema emite alertas automáticos para autoridades e população local, por SMS, apps ou sirenes.
+        </p>
+        <a href="#" class="text-yellow-500 font-bold text-sm underline"></a>
+      </div>
+  </div>
   </div>
   <div class="flex justify-center p-5 gap-5 flex-col items-center" id="tecnologias">
     <div class="flex flex-col gap-5 md:flex-row gap-3">
