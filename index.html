@@ -6,16 +6,16 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="style.css">
   <title>FloodDrone</title>
-  
+ 
 </head>
-<body class="min-h-screen bg-gradient-to-b from-blue-100 via-sky-100 to-gray-200">   
+<body class="min-h-screen bg-gradient-to-b from-blue-100 via-sky-100 to-gray-200">  
   <header class="">
     <nav class="p-3 font-semibold text-gray-500">
         <ul class="flex gap-6 justify-center md:gap-20">
-          <li><a href="#">Problemas</a></li>
-          <li><a href="#">Dados</a></li>
-          <li><a href="#">Sobre</a></li>
-          <li><a href="#">Tecnologias</a></li>
+          <li><a href="#problemas">Problemas</a></li>
+          <li><a href="#dados">Dados</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#tecnologias">Tecnologias</a></li>
         </ul>
       </nav>
   </header>
@@ -27,14 +27,14 @@
                 <h1 class="font-bold text-7xl ps-12">Drone</h1>
                 <p class="font-semibold text-gray-700 py-5 italic">Monitoramento inteligente das chuvas para proteger vidas antes que a água chegue.</p>
             </div>
-            <div> 
+            <div>
               <img src="assets/images/drone.png" alt="" class="rounded-xl">
             </div>
         </div>
     </section>
   </main>
   <div class="flex flex-col">
-    <section>
+    <section id="problemas">
       <div class="bg-gray-400 mx-5 rounded-xl flex justify-between p-4 font-bold text-gray-800 text-2xl gap-5">
         <div>
           <h2>21 Mil</h2>
@@ -52,8 +52,8 @@
     </section>
     <p class="mx-5 p-1 italic text-sm text-gray-500">Dados retirados do Arquivo da GS</p>
   </div>
-  <div class="flex flex-col gap-5 text-gray-800 py-8">
-    <div class="main-info">
+  <div class="flex flex-col gap-5 text-gray-800 py-8" id="dados">
+    <div class="main-info md:flex gap-5">
       <h1 class="font-bold text-5xl ps-6">Problemas</h1>
       <h1 class="font-bold text-5xl pe-6 text-end">Identificados</h1>
     </div>
@@ -89,80 +89,84 @@
     </div>
   </div>
   <div class="p-5">
-    <h1 class="text-3xl font-bold mb-4">Ideia Desenvolvida</h1>
+    <h1 class="text-3xl font-bold mb-4" id="sobre">Ideia Desenvolvida</h1>
     <p class="mb-6 text-gray-700">
       Visando todo o cenário já citado, o FloodDrone foi uma ideia pensada para a redução de sofrimento e destruições causadas por enchentes.
     </p>
   </div>
-  <div class="flex justify-center p-5 gap-5 flex-col items-center">
-    <div class="card perspective w-[250px] h-[250px] cursor-pointer" onclick="this.querySelector('.card-inner').classList.toggle('flipped')">
-      <div class="card-inner relative w-full h-full transition-transform duration-700 preserve-3d">
-        <div class="card-front absolute w-full h-full p-5 bg-white shadow-lg flex flex-col justify-between items-between backface-hidden text-gray-800">
-          <div>
-            <h3 class="text-xl font-semibold">Sensor de Temperatura</h3>
-            <p></p>
+  <div class="flex justify-center p-5 gap-5 flex-col items-center" id="tecnologias">
+    <div class="flex flex-col gap-5 md:flex-row gap-3">
+      <div class="card perspective w-[250px] h-[250px] cursor-pointer md:w-[200px] h-[200px]" onclick="this.querySelector('.card-inner').classList.toggle('flipped')">
+        <div class="card-inner relative w-full h-full transition-transform duration-700 preserve-3d">
+          <div class="card-front absolute w-full h-full p-5 bg-white shadow-lg flex flex-col justify-between items-between backface-hidden text-gray-800">
+            <div>
+              <h3 class="text-xl font-semibold">Sensor de Temperatura</h3>
+              <p></p>
+            </div>
+            <p class="mt-2 text-3xl text-blue-900">+</p>
           </div>
-          <p class="mt-2 text-3xl text-blue-900">+</p>
+          <div class="card-back absolute w-full h-full bg-white p-5 shadow-lg flex justify-center items-center backface-hidden rotate-y-180 text-gray-800">
+            <p class="italic font-semibold">Dispositivo eletrônico utilizado para medir a temperatura do ambiente com precisão. Ideal para monitoramento climático e ambiental em tempo real.</p>
+          </div>
         </div>
-        <div class="card-back absolute w-full h-full bg-white p-5 shadow-lg flex justify-center items-center backface-hidden rotate-y-180 text-gray-800">
-          <p class="italic font-semibold">Dispositivo eletrônico utilizado para medir a temperatura do ambiente com precisão. Ideal para monitoramento climático e ambiental em tempo real.</p>
+      </div>
+      <div class="card perspective w-[250px] h-[250px] cursor-pointer md:w-[200px] h-[200px]" onclick="this.querySelector('.card-inner').classList.toggle('flipped')">
+        <div class="card-inner relative w-full h-full transition-transform duration-700 preserve-3d">
+          <div class="card-front absolute w-full h-full p-5 bg-white shadow-lg flex flex-col justify-between items-between backface-hidden text-gray-800">
+            <div>
+              <h3 class="text-xl font-semibold">Sensor de Umidade Relativa</h3>
+              <p></p>
+            </div>
+            <p class="mt-2 text-3xl text-blue-900">+</p>
+          </div>
+          <div class="card-back absolute w-full h-full bg-white p-5 shadow-lg flex justify-center items-center backface-hidden rotate-y-180 text-gray-800">
+            <p class="italic font-semibold">Dispositivo que mede a umidade relativa do ar, comparando o vapor com o máximo que o ar pode conter. Fundamental para previsões meteorológicas e avaliação do conforto térmico.</p>
+          </div>
+        </div>
+      </div>
+      <div class="card perspective w-[250px] h-[250px] cursor-pointer md:w-[200px] h-[200px]" onclick="this.querySelector('.card-inner').classList.toggle('flipped')">
+        <div class="card-inner relative w-full h-full transition-transform duration-700 preserve-3d">
+          <div class="card-front absolute w-full h-full p-5 bg-white shadow-lg flex flex-col justify-between items-between backface-hidden text-gray-800">
+            <div>
+              <h3 class="text-xl font-semibold">Barômetro Digital</h3>
+              <p></p>
+            </div>
+            <p class="mt-2 text-3xl text-blue-900">+</p>
+          </div>
+          <div class="card-back absolute w-full h-full bg-white p-5 shadow-lg flex justify-center items-center backface-hidden rotate-y-180 text-gray-800">
+            <p class="italic font-semibold">Sensor eletrônico que mede a pressão atmosférica. Útil para prever mudanças no tempo, como aproximação de tempestades ou frentes frias.</p>
+          </div>
         </div>
       </div>
     </div>
-    <div class="card perspective w-[250px] h-[250px] cursor-pointer" onclick="this.querySelector('.card-inner').classList.toggle('flipped')">
-      <div class="card-inner relative w-full h-full transition-transform duration-700 preserve-3d">
-        <div class="card-front absolute w-full h-full p-5 bg-white shadow-lg flex flex-col justify-between items-between backface-hidden text-gray-800">
-          <div>
-            <h3 class="text-xl font-semibold">Sensor de Umidade Relativa</h3>
-            <p></p>
+    <div class="flex flex-col gap-5 md:flex-row gap-3">
+      <div class="card perspective w-[250px] h-[250px] cursor-pointer md:w-[200px] h-[200px]" onclick="this.querySelector('.card-inner').classList.toggle('flipped')">
+        <div class="card-inner relative w-full h-full transition-transform duration-700 preserve-3d">
+          <div class="card-front absolute w-full h-full p-5 bg-white shadow-lg flex flex-col justify-between items-between backface-hidden text-gray-800">
+            <div>
+              <h3 class="text-xl font-semibold">Camera HD</h3>
+              <p></p>
+            </div>
+            <p class="mt-2 text-3xl text-blue-900">+</p>
           </div>
-          <p class="mt-2 text-3xl text-blue-900">+</p>
-        </div>
-        <div class="card-back absolute w-full h-full bg-white p-5 shadow-lg flex justify-center items-center backface-hidden rotate-y-180 text-gray-800">
-          <p class="italic font-semibold">Equipamento que mede a quantidade de vapor de água presente no ar em relação ao máximo que o ar pode conter em determinada temperatura. Essencial para análise de conforto térmico e previsão meteorológica.</p>
+          <div class="card-back absolute w-full h-full bg-white p-2 shadow-lg flex justify-center items-center backface-hidden rotate-y-180 text-gray-800">
+            <p class="italic font-semibold">Dispositivo de captura de imagens com alta definição (alta resolução), ideal para monitoramento visual de áreas externas ou internas, auxiliando em análises ambientais e de segurança.</p>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="card perspective w-[250px] h-[250px] cursor-pointer" onclick="this.querySelector('.card-inner').classList.toggle('flipped')">
-      <div class="card-inner relative w-full h-full transition-transform duration-700 preserve-3d">
-        <div class="card-front absolute w-full h-full p-5 bg-white shadow-lg flex flex-col justify-between items-between backface-hidden text-gray-800">
-          <div>
-            <h3 class="text-xl font-semibold">Barômetro Digital</h3>
-            <p></p>
+        <div class="card perspective w-[250px] h-[250px] cursor-pointer md:w-[200px] h-[200px]" onclick="this.querySelector('.card-inner').classList.toggle('flipped')">
+          <div class="card-inner relative w-full h-full transition-transform duration-700 preserve-3d">
+            <div class="card-front absolute w-full h-full p-5 bg-white shadow-lg flex flex-col justify-between items-between backface-hidden text-gray-800">
+              <div>
+                <h3 class="text-xl font-semibold">Anemômetro</h3>
+                <p></p>
+              </div>
+              <p class="mt-2 text-3xl text-blue-900">+</p>
+            </div>
+            <div class="card-back absolute w-full h-full bg-white p-5 shadow-lg flex justify-center items-center backface-hidden rotate-y-180 text-gray-800">
+              <p class="italic font-semibold">Drones entregam alimentos, remédios e ajuda humanitária em áreas inacessíveis após desastres naturais.</p>
+            </div>
           </div>
-          <p class="mt-2 text-3xl text-blue-900">+</p>
-        </div>
-        <div class="card-back absolute w-full h-full bg-white p-5 shadow-lg flex justify-center items-center backface-hidden rotate-y-180 text-gray-800">
-          <p class="italic font-semibold">Sensor eletrônico que mede a pressão atmosférica. Útil para prever mudanças no tempo, como aproximação de tempestades ou frentes frias.</p>
-        </div>
-      </div>
-    </div>
-    <div class="card perspective w-[250px] h-[250px] cursor-pointer" onclick="this.querySelector('.card-inner').classList.toggle('flipped')">
-      <div class="card-inner relative w-full h-full transition-transform duration-700 preserve-3d">
-        <div class="card-front absolute w-full h-full p-5 bg-white shadow-lg flex flex-col justify-between items-between backface-hidden text-gray-800">
-          <div>
-            <h3 class="text-xl font-semibold">Camera HD</h3>
-            <p></p>
-          </div>
-          <p class="mt-2 text-3xl text-blue-900">+</p>
-        </div>
-        <div class="card-back absolute w-full h-full bg-white p-2 shadow-lg flex justify-center items-center backface-hidden rotate-y-180 text-gray-800">
-          <p class="italic font-semibold">Dispositivo de captura de imagens com alta definição (alta resolução), ideal para monitoramento visual de áreas externas ou internas, auxiliando em análises ambientais e de segurança.</p>
-        </div>
-      </div>
-    </div>
-    <div class="card perspective w-[250px] h-[250px] cursor-pointer" onclick="this.querySelector('.card-inner').classList.toggle('flipped')">
-      <div class="card-inner relative w-full h-full transition-transform duration-700 preserve-3d">
-        <div class="card-front absolute w-full h-full p-5 bg-white shadow-lg flex flex-col justify-between items-between backface-hidden text-gray-800">
-          <div>
-            <h3 class="text-xl font-semibold">Anemômetro</h3>
-            <p></p>
-          </div>
-          <p class="mt-2 text-3xl text-blue-900">+</p>
-        </div>
-        <div class="card-back absolute w-full h-full bg-white p-5 shadow-lg flex justify-center items-center backface-hidden rotate-y-180 text-gray-800">
-          <p class="italic font-semibold">Drones entregam alimentos, remédios e ajuda humanitária em áreas inacessíveis após desastres naturais.</p>
-        </div>
       </div>
     </div>
   </div>
@@ -174,8 +178,8 @@
         <h5 class="font-bold">Navegação</h5>
         <ul class="px-2 p-2">
           <li class="hover:text-black"><a href="#">Inicio</a></li>
-          <li class="hover:text-black""><a href="#">Dados</a></li>
-          <li class="hover:text-black""><a href="#">Sobre</a></li>
+          <li class="hover:text-black"><a href="#">Dados</a></li>
+          <li class="hover:text-black"><a href="#">Sobre</a></li>
         </ul>
       </div>
       <div class="redes flex flex-col gap-2">
